@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="translationY"
+        android:valueFrom="0"
+        android:valueTo="200dp"
+    android:duration="1500"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+    <objectAnimator
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="-500"
+        android:duration="1500"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        />
+    <objectAnimator
+        android:propertyName="translationX"
+        android:valueTo="-50dp"
+    android:duration="1500"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">knife hit</string>
+    <string name="font_family">sans-serif-condensed-medium</string>
+    <string name="black_points">Black : %s</string>
+    <string name="white_points">White : %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

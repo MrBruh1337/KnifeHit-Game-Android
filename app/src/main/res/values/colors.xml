@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="redish">#DC204B</color>
+    <color name="greenish">#487C65</color>
+    <color name="blueish">#065CF3</color>
+    <color name="coin">#FDA12E</color>
+    <color name="Tint">#FFAAAAAA</color>
+    <array name="confetti_colors">
+        <item>@android:color/holo_red_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_blue_dark</item>
+        <item>@android:color/holo_orange_dark</item>
+    </array>
+</resources>

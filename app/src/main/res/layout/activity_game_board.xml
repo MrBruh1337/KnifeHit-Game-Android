@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GameBoard">
+
+    <TextView
+        android:id="@+id/scoretext2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/customfont"
+        android:text="Score:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+
+
+        android:id="@+id/layoutrelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/knife"
+            android:layout_width="36dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/log"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/blue_knife" />
+
+        <TextView
+            android:id="@+id/leveltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/knife"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/customfont"
+            android:text="Level1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="75dp"
+            app:srcCompat="@drawable/log_image" />
+
+        <ImageView
+            android:id="@+id/fruit"
+            android:layout_width="36dp"
+            android:layout_height="68dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/reverse" />
+
+        <ImageView
+            android:id="@+id/ghostknife"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/blue_knife_count_indicator" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="85dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog3" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentcontain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="124dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog2" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

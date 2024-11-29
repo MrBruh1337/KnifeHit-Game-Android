@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GameBoard">
+
+    <TextView
+        android:id="@+id/scoretext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/customfont"
+        android:text="Score:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leveltext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fontFamily="@font/customfont"
+        android:rotation="90"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+
+
+        android:id="@+id/layoutrelative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+        android:id="@+id/knife2"
+        android:layout_width="36dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/log2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/blue_knife" />
+
+        <nl.dionsegijn.konfetti.xml.KonfettiView
+            android:id="@+id/konfeti2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/log2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/log_image" />
+
+        <ImageView
+            android:id="@+id/broken1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="250dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog1" />
+
+        <ImageView
+            android:id="@+id/broken3"
+            android:layout_width="85dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog3" />
+
+        <ImageView
+            android:id="@+id/broken2"
+            android:layout_width="124dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="320dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/brokenlog2" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentcontain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/fruit2"
+            android:layout_width="36dp"
+            android:layout_height="68dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/reverse" />
+
+        <ImageView
+            android:id="@+id/ghostknife2"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/blue_knife_count_indicator" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
